@@ -1,4 +1,5 @@
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 sns.set()
 
@@ -8,7 +9,8 @@ iris =  sns.load_dataset('iris')
 print(iris.head())
 
 # Display a pairplot
-sns.pairplot(iris, hue='species', size=1.5)
+sns.pairplot(iris, hue='species', height=1.5)
+plt.show()
 
 # Features
 X_iris = iris.drop('species', axis=1)
