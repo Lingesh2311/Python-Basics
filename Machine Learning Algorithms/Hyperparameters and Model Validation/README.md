@@ -11,7 +11,7 @@
 Try applying cross validation since we should not miss out the portion of data while training and evaluating using the holdout sets. Check out the cross validation document for more details [here](http://scikit-learn.org/stable/modules/cross_validation.html)
 
 ### Selecting the Best Model
-Consider the bias variance model [here]().
+Consider the bias variance model [here](https://github.com/Lingesh2311/Python-Basics/blob/master/Machine%20Learning%20Algorithms/Hyperparameters%20and%20Model%20Validation/figures/bias-variance.png).
 
 #### Bias-Variance Tradeoff
 - For high-bias model: The performance of the model on the validation and the trainng dataset are similar
