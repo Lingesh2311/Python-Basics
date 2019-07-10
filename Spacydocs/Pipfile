@@ -8,6 +8,11 @@ verify_ssl = true
 [packages]
 spacy = "*"
 blis = "*"
+wheel = "*"
+cymem = "*"
+preshed = "*"
+murmurhash = "*"
+thinc = "*"
 
 [requires]
 python_version = "3.7"
