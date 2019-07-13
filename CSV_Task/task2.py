@@ -2,7 +2,7 @@
 1. Download file a.csv from S3 bucket
 2. Split them to a1.csv and a2.csv
 3. Recombine them to b.csv
-3. Upload the resulting filesto S3 bucket
+3. Upload the resulting files to S3 bucket
 '''
 
 
