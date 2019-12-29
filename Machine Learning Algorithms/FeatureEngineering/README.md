@@ -1,6 +1,7 @@
 <h3> Feature Engineering Basics </h3>
 
 ## Categorical Features
+
 <p>
     <ol>
         <li> Convert the dataframe to dictionary</li>
@@ -14,6 +15,7 @@
 <br>
 
 ## Text Features
+
 <p>
     <ol>
     <li>Use the <code>sklearn.feature_extraction.text.CountVectorizer</code></li>
@@ -28,12 +30,14 @@
 <br>
 
 ## Image Features
+
 <p>
     Check <a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.04-feature-engineering.html#Image-Features">here</a> for more details.
 </p>
 <br>
 
 ## Derived Features
+
 <p>
     We can create new features from the existing features. This is done in the simple case of Linear regression where the features are converted to Polynomial features.
     <ol>
@@ -44,9 +48,10 @@
 <br>
 
 ## Imputation - Filling the the Missing
+
 <p>
     <p>
-    <li>Use the <code>sklearn.preprocessing.Imputer</code></li>
+    <li>Use the <code>sklearn.impute.SimpleImputer</code></li>
     <li>Follow it with <code>.fit_transform()</code>
     </p>
     <p>
@@ -56,6 +61,7 @@
 <br>
 
 ## Feature Pipelines
+
 <p>
 Adding pipelines is an important part for a ML model. This will include all the transformations that are responsible for changing the data from start to ML model ready.
 <ol>
