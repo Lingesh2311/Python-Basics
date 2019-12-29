@@ -1,0 +1,6 @@
+# Pipenv Files
+Pipfile
+Pipfile.lock
+
+# Script
+*.sh
