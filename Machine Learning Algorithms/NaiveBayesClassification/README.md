@@ -1,15 +1,15 @@
 ## Naive Bayes Classification
 
 <p>
-    This Classification algorithm is very much suitable for high dimensional datasets. They are <em>quick-and-dirty</em> baseline for model for classification.
+    This Classification algorithm is very much suitable for high dimensional datasets. They are <em>quick-and-dirty</em> baseline model for classification.
 </p>
 <p>
-    There are 2 types of NB Classification algorithms that are considered here, which are:
+    There are 2 types of NB Classification algorithms which are considered here as follows:
     <li>Gaussian Naive Bayes</li>
     <li>Multinomial Naive Bayes</li>
 </p>
 <p>
-    The assumption for Gaussian Naive Bayes is that the datapoints are assumed to be drawn from a Gaussian distribution. The Naive Bayes model is a generative model which creates a rough approximation for the labels. This is used to create a probability cloud (ellipses) that denotes the mean and standard deviation of the datapoints. The boundary in Gaussian Naive Bayes classification is in general Quadratic
+    The assumption for Gaussian Naive Bayes is that the datapoints are assumed to be drawn from a Gaussian distribution. The Naive Bayes model is a generative model which creates a rough approximation for the labels. This is used to create a probability cloud (ellipses) that denotes the mean and standard deviation of the datapoints. The boundary in Gaussian Naive Bayes classification is in general a Quadratic
 </p>
 <p>
     In the case of the Multinomial Naive Bayes, we model the nature of the data using the best-fit multinomial distribution. This is best suited for observing counts among a number of categories. MNB is used for features that represent the count rates.
