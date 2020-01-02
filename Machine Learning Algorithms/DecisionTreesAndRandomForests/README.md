@@ -6,6 +6,10 @@ Random forests are an example of an ensemble learner built on top of decision tr
 ### Simple Decision Tree
 During the alternating axis splits. The tree will iteratively split the data along one or the other axis according to some quantitative criterion, and assign the label based on the majority votes on that region.
 
+The nodes are represented by questions and the corresponding edges are marked by the answers. This results in a child node and the question that follows depends on the answers of the previous branch.
+
+There can be questions based on continuous, discrete and boolean features. There can be more than binary answer generating question but it can always be upscaled to a binary answer question.
+
 This is done using the `sklearn.tree.DecisionTreeClassifier` estimator. 
 
 ### Decision Tree and Overfitting
@@ -28,6 +32,8 @@ This way we get the ensemble of overfitting trees to provide a clearer picture o
 ### Random Forest Regression
 
 This is similar to classification, instead of finding the label via majority number of votes. The model tries to predict the target variable using the splits generated.
+
+This arises from the fact that complex systems have the difficulty of fitting global models (Linear regression). This can be overcome by applying local models on smaller partitions via the application of recursive partitioning.
 
 ### Advantages of Random Forests
 - Both training and prediction rates are fast. Both tasks can be parallelized, because the induvidual trees are independent entities.
@@ -56,3 +62,23 @@ This is similar to classification, instead of finding the label via majority num
 - `max_features`: The number of subset of features to consider when splitting a node. The lower the value, greater is the reduction of the variance, but also greater is the increase in bias. For regression set, `max_features=None` (consider all the features). For classification set, `max_features="sqrt"` (using a random subset of size sqrt(features)).
 
 The best parameters are cross-validated.
+
+### Tree Pruning
+
+The size of the tree will determine the accuracy of the classification result. To get the best result from the tree, it is important to prune the branches to get a model that is low in bias and avoids overfitting. This is where the process of tree selection comes into picture.
+
+### Tree Selection
+
+The tree selection is done by calculating the value of the <b>Entropy</b>. This is calculation of the chaocity in a sample space. The entropy is highest when the split is equal. In case of a coin toss event, the entropy is highest when the probability of getting a head or a tail is 0.5.
+
+<b>Combine the adjacent nodes that have low information gain to get a pruned tree.</b>
+
+#### Information Gain
+
+This is the <b>decrease in entropy</b>.
+- Calculate the initial Entropy (E1)
+- Split the node based on a particular attribute
+- Calculate the Entropy (E2)
+- Find the decrease in Entropy (E1-E2)
+- Repeat this procedure to find the feature that is responsible for the largest decrease in Entropy  or the larget information gain.
+- Continue the process to get the features on which the split should follow on the rest of the branches.
