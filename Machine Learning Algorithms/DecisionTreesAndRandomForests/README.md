@@ -10,6 +10,8 @@ The nodes are represented by questions and the corresponding edges are marked by
 
 There can be questions based on continuous, discrete and boolean features. There can be more than binary answer generating question but it can always be upscaled to a binary answer question.
 
+The decision tree is a distribution free non-parametric method. It does not depend upon probability distribution assumptions.
+
 This is done using the `sklearn.tree.DecisionTreeClassifier` estimator. 
 
 ### Decision Tree and Overfitting
