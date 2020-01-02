@@ -9,6 +9,7 @@ verify_ssl = true
 matplotlib = "*"
 sklearn = "*"
 jupyter = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.7"
