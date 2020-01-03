@@ -38,6 +38,6 @@ Some common types of Regression methods are as follows:
     <p>
     Bias represents the distance between the mean of the estimates and the actual value. Variance represents the spread of the estimates. For a clean model, both the bias and the variance should be low. This is done using the process known as regularization. The error comprises of the following.
     <br>
-    $$
-    f_{x} = E(x)
-    $$
+<p>
+   <img src="https://latex.codecogs.com/svg.latex?a&space;=&space;b&plus;c_{x}" title="a = b+c_{x}" />
+</p>
