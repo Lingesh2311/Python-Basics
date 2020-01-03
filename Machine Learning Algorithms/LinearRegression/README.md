@@ -32,3 +32,12 @@ Some common types of Regression methods are as follows:
     ElasticNet is hybrid of Lasso and Ridge Regression techniques. It is trained with L1 and L2 prior as regularizer. Elastic-net is useful when there are multiple features which are correlated. Lasso is likely to pick one of these at random, while elastic-net is likely to pick both. A practical advantage of trading-off between Lasso and Ridge is that, it allows Elastic-Net to inherit some of Ridge’s stability under rotation.
     </p>
 </p>
+<p>
+    Bias Variance Tradeoff - Need for Regularization
+    <br>
+    <p>
+    Bias represents the distance between the mean of the estimates and the actual value. Variance represents the spread of the estimates. For a clean model, both the bias and the variance should be low. This is done using the process known as regularization. The error comprises of the following.
+    <br>
+    $$
+    f_{x} = E(x)
+    $$
