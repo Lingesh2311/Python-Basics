@@ -41,3 +41,23 @@ Some common types of Regression methods are as follows:
 <p>
   Let <img src="https://latex.codecogs.com/svg.latex?f&space;=&space;f(x)&space;\hat{f}&space;=&space;\hat{f}(x)" title="f = f(x) \hat{f} = \hat{f}(x)" /> be the actual and the predicted values of the function.<br>Then, <img src="https://latex.codecogs.com/svg.latex?E[(y-\hat{f})^{2}]&space;=&space;Bias[\hat{f}^{2}]&space;&plus;&space;\sigma^{2}&space;&plus;&space;Var[\hat{f}]" title="E[(y-\hat{f})^{2}] = Bias[\hat{f}^{2}] + \sigma^{2} + Var[\hat{f}]" /> is the value of the error and the contribution of bias, variance and the irreducible factor to it.
 </p>
+<p>
+    <p>
+    Machine Learning Algorithm Sensitive to Feature scaling:
+    </p>
+    <li> Linear & Logistic Regression
+    <li> Neural Networks
+    <li> Support Vector Machines
+    <li> KNN
+    <li> K-Means Clustering
+    <li> Linear Discriminant Analysis (LDA)
+    <li> Principal Component Analysis (PCA)
+</p>
+<p>
+    <p>
+    Tree Based Algorithms Insensitive to Feature Scaling:
+    </p>
+    <li> Classification and Regression Trees
+    <li> Random Forests
+    <li> Gradient Boosting
+</p>
