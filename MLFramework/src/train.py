@@ -57,9 +57,7 @@ if __name__ == "__main__":
     score = metrics.roc_auc_score(yvalid, ypred)
     print(f'ROC_AUC_SCORE: {score}')
     hdlr = logging.FileHandler('./score.log')
-    formatter = logging.Formatter('%(num_estimators)s %(score)s')
-    msg = str(num_estimators)+' '+str(score) 
-    hdlr.setFormatter(formatter)
     logger.addHandler(hdlr)
     logger.setLevel(logging.INFO)
-    logger.info(msg)
+    logger.info('Using %s estimators->ROC_AUC Score: %s', str(
+        num_estimators), str(score))
