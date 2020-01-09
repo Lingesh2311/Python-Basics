@@ -3,6 +3,8 @@ export TRAINING_DATA=C://Users//lkanniap//Desktop//GITHUB//Python-Basics//MLFram
 echo "Set Training data path - Done"
 export FOLD=0
 echo "Set Folds value - Done"
+export MODEL=$1
+echo "Set Model value - Done"
 
 echo "Using 100 Estimators"
 python train.py -ne 100

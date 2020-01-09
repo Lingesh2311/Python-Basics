@@ -2,9 +2,10 @@ import pandas as pd
 import logging
 import os
 import argparse
-from sklearn import ensemble
 from sklearn import preprocessing
 from sklearn import metrics
+
+from . import dispatcher
 
 TRAINING_DATA = os.environ.get("TRAINING_DATA")
 FOLD = int(os.environ.get("FOLD"))
@@ -22,6 +23,8 @@ FOLD_MAPPING = {
     3: [0, 1, 2, 4],  # exclude 3
     4: [0, 1, 2, 3]   # exclude 4
 }
+
+MODEL = os.environ.get("MODEL")
 
 if __name__ == "__main__":
     df = pd.read_csv(TRAINING_DATA)
@@ -48,8 +51,7 @@ if __name__ == "__main__":
         valid_df.loc[:, c] = lbl.transform(valid_df[c].values.tolist())
         label_encoders.append((c, lbl))
 
-    clf = ensemble.RandomForestClassifier(
-        n_estimators=args.n_estimators, n_jobs=-1, verbose=2)
+    clf = dispatcher.MODELS[MODEL]
     clf.fit(train_df, ytrain)
     num_estimators = args.n_estimators
     ypred = clf.predict_proba(valid_df)[:, 1]
