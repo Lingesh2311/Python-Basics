@@ -1,1 +1,18 @@
 This is a basic tutorial on Classes and Instances in Python
+
+
+Class Attributes and Class Instances
+
+Class Attributes:
+    - They belong to the class itself, they are shared
+    by all the instances. Such attributes are defined in#
+    the class body parts at the top of the class.
+Instance Attributes:
+    - They are not shared by the objects. Every object has
+    its own copy of the instance attribute. To list all the
+    attributes of an instance/ object, we have two functions
+        - vars(): Displays the attribute of an instance in the
+        form of a dictionary
+        - dir(): This function displays more attributes than vars
+        function, and it is not limited to an instance. It displays
+        the class attributes and methods as well.
