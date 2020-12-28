@@ -10,4 +10,4 @@ def dispatch_dict(choice, a, b):
 
 if __name__=='__main__':
   in_choice = input('Enter your choice: ')
-  print(f"Result : {dispatch_dict()}")
+  print(f"Result : {dispatch_dict(in_choice, 2, 3)}")
